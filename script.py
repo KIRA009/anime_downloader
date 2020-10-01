@@ -21,7 +21,7 @@ def get_bs(link):
 
 def generate_links(name, start, end):
         print('Generating links')
-        links = [(f'https://www2.chia-anime.cc/watch/{name.lower}-episode-{i}.html', i) for i in range(start, end + 1)]
+        links = [(f'https://www2.chia-anime.com/watch/{name.lower}-episode-{i}.html', i) for i in range(start, end + 1)]
         return links
 
 
