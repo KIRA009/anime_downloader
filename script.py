@@ -4,7 +4,7 @@ import sys
 import urllib.parse as urlparse
 
 assert len(sys.argv) == 10, 'There should be 3 arguments, <anime_name> <start_ep> <end_ep>'
-assert sys.argv[2].isnumeric() == False, '<start_ep> should be an integer'
+assert sys.argv[2].isnumeric() == True, '<start_ep> should be an integer'
 assert sys.argv[3].isnumeric() == True, '<end_ep> should be an integer'
 
 name = sys.argv[1]
