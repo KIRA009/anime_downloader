@@ -30,7 +30,7 @@ links = generate_links(name, start, end)
 for link, index in links:
         print(f'Searching for episode {index}')
         bs = get_bs(link)
-        bs = get_bs(bs.find(class_='plugins').find_all('ul')[1].find_all('li')[4].find('a').attrs['href'])
+        bs = get_bs(bs.find(class_='plugins_true').find_all('ul')[1].find_all('li')[4].find('a').attrs['href'])
         #if not rapidx:
         #       link = bs.find_all(class_='dowload'fast)[2].find('a').attrs['href']
         #       parsed = urlparse.urlparse(link)
